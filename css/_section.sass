@@ -1,0 +1,102 @@
+section
+    text-transform: capitalize
+
+section h1
+    font-family: $poppi
+    font-size: 1.7em
+    text-align: center
+    margin-bottom: .3em
+
+section p
+    font-family: $poppi
+    font-size: .68em
+    text-align: center
+    margin: .8em 0
+    color: #525252
+
+section img
+    width: 300px
+    height: 200px
+
+section .card
+    display: grid
+    margin: 2em 0
+    justify-items: center
+    align-content: center
+    padding-bottom: 1em
+    background-image: url("img/section/bmw-3.jpg")
+
+section .btn-card
+    color: $red
+
+section .span
+    display: none
+
+@media screen and ( min-width: 600px )
+    section h1
+        font-size: 2.5em
+
+    section p
+        font-size: .9em
+
+@media screen and ( min-width: 960px )
+    section
+        margin-top: 2.3em
+
+    section h1
+        font-size: 2.7em
+
+    section p 
+        font-size: 1em
+        width: 55%
+        margin: auto
+        padding-bottom: 2em
+
+    section .card-container
+        display: grid
+        grid-template-columns: repeat(3, 330px)
+        justify-content: center
+
+    section .span
+        margin-top: 1em
+        padding: 0 1em
+        display: block
+        width: 95%
+
+    section .span p
+        font-size: .78em
+        width: 100%
+        margin-bottom: -1.2em
+        text-align: left
+
+    section h3 
+        font-size: .9em
+        font-family: $poppi
+
+    section .btn-section
+        font-size: 1em
+        cursor: pointer
+        transition: .5s
+        font-family: $poppi
+        &:hover
+            padding-right: 1em
+
+    section .arrow
+        font-size: 1.2em
+        transition: .5s
+        cursor: pointer
+        &:hover
+            padding-left: 1em
+
+    section .btn-container
+        width: fit-content
+        padding: .2em
+        &:hover
+            background: rgba(0, 0, 0, 0.123)
+
+@media screen and ( min-width: 1300px )
+    section .span p
+        font-size: .6em
+
+    section .btn-section 
+        font-size: .9em
